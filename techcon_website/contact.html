@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | TechCon 2024</title>
+        <style>
+            body{
+                font-family:Arial,san-serif;
+                margin:0;
+                background-color:#f5f5f5;
+                color: #333;
+            }
+
+            header, footer{
+                background-color: #003366;
+                color:white;
+                text-align: center;
+                padding: 1em 0;
+            }
+
+            nav a{
+                color:white;
+                margin: 0 15px;
+                text-decoration:none;
+                font-weight: bold;
+            }
+
+            nav a:hover{
+                text-decoration:underline;
+            }
+            main{
+                padding: 20px;
+                max-width: 900px;
+                margin: auto;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow:0 0 10px rgba(0,0,0,0.1);
+            }
+
+            section{
+                margin-bottom:30px;
+            }
+
+            iframe{
+                width: 100px;
+                height: 350px;
+                border: none;
+                border-radius:8px;
+            }
+
+            form{
+                display: flex;
+                flex-direction:column;
+                gap:15px;
+            }
+
+            label{
+                font-weight: bold;
+            }
+
+            input, textarea{
+                padding: 10px;
+                font-size:1em;
+                border:1px solid #ccc;
+                border-radius:5px;
+            }
+
+            button{
+                background-color:#003366;
+                color:white;
+                padding:10px;
+                font-size: 1em;
+                border:none;
+                border-radius:5px;
+                cursor:pointer;
+            }
+
+            button:hover{
+                background-color:#0055aa;
+            }
+
+            .social-links a {
+                margin-right:15px;
+                color:#003366;
+                text-decoration: none;
+            }
+
+            .social-linka a:hover{
+                text-decoration:underline;
+            }
+
+            footer{
+                margin-top:40px;
+                font-size:0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header Section -->
+         <header>
+            <h1> Contact Us</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="register.html">Register</a>
+            </nav>
+         </header>
+
+         <!-- Main Content -->
+          <main>
+            <section>
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Whether you have questions about the event, partnership opportunities, or need assistance, please reach out. </p>
+            </section>
+
+            <section>
+                <h3>Contact Information</h3>
+                <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+
+                <div class="socail-links">
+                    <p>Follow us on social media:</p>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.linkedincom" target="_blank">LinkedIn</a>
+
+               </div>
+            </section>
+
+            <section>
+                <h3>Conference Venue</h3>
+                <p>TechCon 2024 will be held at the Sillicon Valley Conference Center, San Jose, CA.</p>
+                <!-- Embedded Google Map-->
+                 <iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.973601050765!2d-121.8907044237442!3d37.33478967209369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccb0a3f4a3a1%3A0x56a1cb507f1df5b4!2sSan%20Jose%20McEnery%20Convention%20Center!5e0!3m2!1sen!2sus!4v1697049123456!5m2!1sen!2sus" 
+                    allowfullscreen=""
+                    loading="lazy">
+                 </iframe>
+            </section>
+
+            <section>
+                <h3> Contact Us Form</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="email">Messgae:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <botton type="submit">Send Message</botton>
+                </form>
+            </section>
+          </main>
+
+          <!-- Footer Section -->
+           <footer>
+            <p> copyright &copy; 2024 TechCon Conference. All rights reserved</p>
+           </footer>
+    </body>
+</html>
